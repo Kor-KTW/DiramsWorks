@@ -1,0 +1,51 @@
+bashrc 수정하듯이
+$PROFILE.AllUsersAllHosts -> 모든 유저
+$PROFILE -> 해당 유저만
+파일을 수정해주면 됨.
+하단의 예시 참고.
+
+
+-----------example_block-----------
+###################################
+#######TW_Kang_profile_Block#######
+############2022.05.25#############
+###################################
+
+
+###########Set-Function############
+
+function Set-loaction-Workspace { 
+    Set-Location ~/Desktop/Workspace 
+} 
+
+function notepad_profile_all {
+    notepad $PROFILE.AllUsersAllHosts
+}
+
+function ssh_mrpl_LINAC {
+    ssh 
+}
+function ssh_mrpl {
+    ssh 
+}
+
+function notepad { 
+    notepad.exe 
+} 
+
+function git-imidiatly-push {
+    git init
+    git add .
+    git commit -m "By GIP"
+    git push 
+}
+#############Set-Alias#############
+
+Set-Alias ws Set-loaction-Workspace
+
+Set-Alias npa notepad_profile_all
+
+Set-Alias np notepad
+
+Set-Alias gitip git-imidiatly-push
+
