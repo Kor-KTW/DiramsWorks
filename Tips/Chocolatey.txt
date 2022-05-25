@@ -1,0 +1,6 @@
+Chocolatey : Package management programe (ex. download vim, git hub etc.)
+
+관리자권한으로 powershell 실행 후 아래의 텍스트 입력
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+설치 후 Choco -?로 설치 확인

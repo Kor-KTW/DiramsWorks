@@ -1,0 +1,7 @@
+https://apps.microsoft.com/store/detail/powershell/9MZ1SNWT0N5D?hl=ko-kr&gl=KR
+에서 다운로드 
+단, 경로에 대한 문제가 발생할 수 있음.
+이러한 경우에는, 
+Powershell을 관리자 권한으로 실행 시킨 뒤
+get-help Set-ExecutionPolicy를 입력하여, 설치 확인 및 다운로드를 진행하고,
+Set-ExecutionPolicy RemoteSigned를 입력하면 해결됨.
